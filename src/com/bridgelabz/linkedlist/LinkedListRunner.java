@@ -9,16 +9,14 @@ public class LinkedListRunner {
 		
 		MyLinkedList myLinkedList=new MyLinkedList();
 		
-		myLinkedList.append(firstNode);
-		myLinkedList.append(secondNode);
+		myLinkedList.add(firstNode);
+		
 		myLinkedList.append(thirdNode);
+		myLinkedList.insert(firstNode,secondNode);
 		myLinkedList.print();
 		
 		
-//		firstNode.setNext(secondNode);
-//		secondNode.setNext(thirdNode);
-//        boolean result = firstNode.getNext().equals(secondNode) && secondNode.getNext().equals(thirdNode);
-//        System.out.println(result);
+
 		
 	}
 
