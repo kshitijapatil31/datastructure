@@ -22,7 +22,7 @@ public class MyStack <T>{
 	  public String toString(){
 		  MyStackNode current=top;
 		        StringBuilder s=new StringBuilder();
-		     System.out.println("\n---------------STACK--------------");
+		    
 		     
 		     while(current!=null){
 		       s.append(current.key+"  ");
