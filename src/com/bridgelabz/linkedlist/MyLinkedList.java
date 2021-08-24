@@ -82,7 +82,17 @@ public class MyLinkedList {
 			}
 		}
 	}
-
+	public void searchAndInsert(int value,INode newNode) {
+		INode temp=head;
+		for(int i=0;i<size-1;i++) {
+			temp=temp.getNext();
+			if(temp.getKey().equals(value)) {
+				temp.setNext(newNode);
+				newNode.setNext(temp);
+				//System.out.println(i);
+			}
+		}
+	}
 	public void print() {
 		StringBuffer printformat=new StringBuffer("My Nodes: ");
 	
