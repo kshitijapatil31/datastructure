@@ -55,18 +55,28 @@ public class MyLinkedList {
 		head=head.getNext();
 		return temp;
 	}
+	public INode popLast() {
+		INode temp=head;
+		while(!temp.getNext().equals(tail)) {
+			temp=temp.getNext();
+		}
+		tail=temp;
+		temp=temp.getNext();
+		return temp;
+	}
 	public void print() {
 		StringBuffer printformat=new StringBuffer("My Nodes: ");
 	
 		   INode tempNode=head;
 		
-		while(tempNode!=null) {
+		while(tempNode.getNext()!=null) {
 			printformat.append(tempNode.getKey());
 			if(!tempNode.equals(tail)) {
 				printformat.append("-->");
 			}
 			tempNode=tempNode.getNext();
 		}
+		printformat.append(tempNode.getKey());
 		System.out.println(printformat);
 	}
 }
