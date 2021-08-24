@@ -19,6 +19,17 @@ public class MyStack <T>{
 		
 		
 	}
+	public T pop(){
+	     T value=null;
+	     if(!isEmpty()){
+	         top=top.next;
+	         value=top.key;
+	     }
+	     return value;
+	}
+	     public T peek(){
+	         return (T) top.value;
+	        }
 	  public String toString(){
 		  MyStackNode current=top;
 		        StringBuilder s=new StringBuilder();

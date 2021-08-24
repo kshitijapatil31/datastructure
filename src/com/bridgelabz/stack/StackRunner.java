@@ -7,7 +7,9 @@ public class StackRunner {
 		myStack.push(70);
 		myStack.push(30);
     	myStack.push(56);
+    	
        System.out.println(myStack);
-		
+		myStack.peek();
+		myStack.pop();
 	}
 }
