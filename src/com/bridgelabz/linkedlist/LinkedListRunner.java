@@ -10,13 +10,15 @@ public class LinkedListRunner {
 		MyLinkedList myLinkedList=new MyLinkedList();
 		
 		myLinkedList.add(firstNode);
+		myLinkedList.add(secondNode);
+		myLinkedList.add(thirdNode);
+		//myLinkedList.append(thirdNode);
+		//myLinkedList.insert(firstNode,secondNode);
 		
-		myLinkedList.append(thirdNode);
-		myLinkedList.insert(firstNode,secondNode);
-		myLinkedList.pop();
+		//myLinkedList.pop();
 		myLinkedList.search(30);
 
-		//myLinkedList.print();
+		myLinkedList.print();
 		
 		
 

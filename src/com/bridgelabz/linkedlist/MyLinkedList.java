@@ -4,14 +4,18 @@ public class MyLinkedList {
 
 	private INode head;
 	private INode tail;
-	
+	private int size;
 	
 	public MyLinkedList() {
 		super();
 		this.head = null;
 		this.tail = null;
+		size=0;
 	}
 
+	public int listSize() {
+		return size;
+	}
 
 	public void add(INode newNode) {
 		if(tail==null) {
@@ -27,6 +31,7 @@ public class MyLinkedList {
 			head=newNode;
 			head.setNext(tempNode);
 		}
+		size++;
 		
 	}
 	
@@ -42,18 +47,21 @@ public class MyLinkedList {
 			
 		}
 		
-		
+		size++;
 	}
 	
 	public void insert(INode node,INode newNode) {
 		INode temp=node.getNext();
 		node.setNext(newNode);
 		newNode.setNext(temp);
+		size++;
 	}
 	public INode pop() {
 		INode temp=head;
 		head=head.getNext();
+		size--;
 		return temp;
+		
 	}
 	public INode popLast() {
 		INode temp=head;
@@ -62,28 +70,19 @@ public class MyLinkedList {
 		}
 		tail=temp;
 		temp=temp.getNext();
+		size--;
 		return temp;
 	}
-	public void search(int key) {
+	public void search(int value) {
 		INode temp=head;
-		int i=1;
-		boolean flag=false;
-		if(head==null) {
-			System.out.println("list is empty");
-		}else {
-			while(temp!=null&& temp.getNext()!= null) {
-				if(temp.key==key) {
-					flag=true;
-					break;
-				}
-				i++;
-				temp=temp.getNext();
+		for(int i=0;i<size-1;i++) {
+			temp=temp.getNext();
+			if(temp.getKey().equals(value)) {
+				System.out.println(i);
 			}
 		}
-		if(flag) {
-			System.out.println(i);
-		}
 	}
+
 	public void print() {
 		StringBuffer printformat=new StringBuffer("My Nodes: ");
 	
