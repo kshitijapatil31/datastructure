@@ -9,9 +9,9 @@ public class LinkedListRunner {
 		
 		MyLinkedList myLinkedList=new MyLinkedList();
 		
-		myLinkedList.add(firstNode);
-		myLinkedList.add(secondNode);
-		myLinkedList.add(thirdNode);
+		myLinkedList.append(firstNode);
+		myLinkedList.append(secondNode);
+		myLinkedList.append(thirdNode);
 		myLinkedList.print();
 		
 		
