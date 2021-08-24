@@ -14,7 +14,9 @@ public class LinkedListRunner {
 		myLinkedList.append(thirdNode);
 		myLinkedList.insert(firstNode,secondNode);
 		myLinkedList.pop();
-		myLinkedList.print();
+		myLinkedList.search(30);
+
+		//myLinkedList.print();
 		
 		
 

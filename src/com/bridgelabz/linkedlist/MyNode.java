@@ -2,8 +2,8 @@ package com.bridgelabz.linkedlist;
 
 public class MyNode<T> implements INode<T> {
 
-	private T key;
-	private INode next;
+	 T key;
+	 INode next;
 
 	public MyNode(T key) {
 		this.key = key;

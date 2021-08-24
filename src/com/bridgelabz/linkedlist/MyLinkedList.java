@@ -64,6 +64,26 @@ public class MyLinkedList {
 		temp=temp.getNext();
 		return temp;
 	}
+	public void search(int key) {
+		INode temp=head;
+		int i=1;
+		boolean flag=false;
+		if(head==null) {
+			System.out.println("list is empty");
+		}else {
+			while(temp!=null&& temp.getNext()!= null) {
+				if(temp.key==key) {
+					flag=true;
+					break;
+				}
+				i++;
+				temp=temp.getNext();
+			}
+		}
+		if(flag) {
+			System.out.println(i);
+		}
+	}
 	public void print() {
 		StringBuffer printformat=new StringBuffer("My Nodes: ");
 	
