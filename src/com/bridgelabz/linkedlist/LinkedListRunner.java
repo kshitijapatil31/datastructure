@@ -13,6 +13,7 @@ public class LinkedListRunner {
 		
 		myLinkedList.append(thirdNode);
 		myLinkedList.insert(firstNode,secondNode);
+		myLinkedList.pop();
 		myLinkedList.print();
 		
 		
