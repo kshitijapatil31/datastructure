@@ -10,6 +10,7 @@ public class QueueRunner {
 		myQueue.enQueue(firstNode);
 		myQueue.enQueue(secondNode);
 		myQueue.enQueue(thirdNode);
+		myQueue.deQueue();
 		myQueue.printQueue();
 	}
 

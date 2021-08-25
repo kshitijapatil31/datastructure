@@ -10,6 +10,9 @@ private  MyLinkedList myLinkedList;
 	public void enQueue(INode<T> node) {
 		myLinkedList.append(node);
 	}
+	public void deQueue() {
+		myLinkedList.pop();
+	}
 	public void printQueue() {
 		myLinkedList.print();
 	}
