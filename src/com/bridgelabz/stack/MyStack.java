@@ -23,7 +23,7 @@ public class MyStack <T>{
 	     T value=null;
 	     if(!isEmpty()){
 	         top=top.next;
-	         value=top.key;
+	         //value=top.key;
 	     }
 	     return value;
 	}
